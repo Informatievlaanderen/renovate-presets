@@ -1,0 +1,20 @@
+{
+    "extends" : [
+        "config:base"
+    ],
+    "description" : "Presets for Renovate that can be used in Informatie Vlaanderen repositories",
+    "prCreation" : "not-pending",
+    "schedule" : "before 7am on the first day of the month",
+    "timezone" : "Europe/Brussels",
+    "packageRules" : [
+        {
+            "matchUpdateTypes" : ["minor", "patch", "pin", "digest"],
+            "automerge" : true,
+            "automergeType" : "branch"
+        },
+        {
+            "matchDepTypes" : [ "devDependencies" ],
+            "automerge" : true
+        }
+    ]
+}
