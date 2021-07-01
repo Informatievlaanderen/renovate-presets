@@ -4,7 +4,7 @@
     ],
     "description" : "Presets for Renovate that can be used in Informatie Vlaanderen repositories",
     "prCreation" : "not-pending",
-    "schedule" : "before 7am",
+    "schedule" : "before 7am every weekday",
     "timezone" : "Europe/Brussels",
     "packageRules" : [
         {
